@@ -1,7 +1,7 @@
 require "boxen/preflight"
 
 class Boxen::Preflight::OS < Boxen::Preflight
-  SUPPORTED_RELEASES = %w(10.8 10.9 10.10 10.11 10.12 10.13)
+	SUPPORTED_RELEASES = %w(10.8 10.9 10.10 10.11 10.12 10.13 10.14)
 
   def ok?
     osx? && (skip_os_check? || supported_release?)
